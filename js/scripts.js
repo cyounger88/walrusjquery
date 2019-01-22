@@ -1,6 +1,10 @@
 $(document).ready(function() {
   $(".clickable").click(function() {
-    $("#walrus-showing").slideToggle();
-    $("#walrus-hidden").slideToggle();
+    var walruses = ["walrus-showing", "walrus-hidden"];
+    walruses.forEach(function(walrus){
+      $("#" + walrus).slideToggle();
+    });
+    // $("#walrus-showing").slideToggle();
+    // $("#walrus-hidden").slideToggle();
   });
 });
